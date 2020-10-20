@@ -1,19 +1,16 @@
 <h1>Login</h1>
 
-
-    {{!-- <p><b>Error:</b> </p> --}}
-
-
-<form method="post" action="/user/login">
+<form action="/login" method="POST">
     <div>
-        <label>Email</label>
-        <input type="text" name="email" />
+        <labe for="email">Email</label>
+        <input type="text" if="email" name="email" required>
     </div>
     <div>
-        <label>Password</label>
-        <input type="password" name="password" />
+        <labe for="password">Password</label>
+        <input type="text" if="password" name="password" required>
     </div>
     <div>
         <input type="submit" value="Login" />
     </div>
 </form>
+<a href="/register">Register</a>
